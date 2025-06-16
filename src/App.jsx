@@ -3,7 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import FreeResources from './components/FreeResources'; // Adjust the path based on your project structure
-
+import ResourceDetail from './components/ResourceDetail';
+import ResumeTemplates from './components/ResumeTemplates';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -28,8 +29,9 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/free-resources" element={<FreeResources />} />
+          <Route path="/free-resources/:resourceId" element={<ResourceDetail />} />
+          <Route path="/free-resources/resume-templates" element={<ResumeTemplates />} />
           <Route path="*" element={<NotFoundPage />} />
-
         </Routes>
       </main>
 
