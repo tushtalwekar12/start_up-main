@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+
+}
+
+.bg-custom {
+ background: linear-gradient(to right, #002e24, #164439);
+}
+.main-text{
+  color:linear-gradient(to right, #304f44 0%, #14ad76 100%)
+
+}
