@@ -25,13 +25,13 @@ const templates = [
     category: 'Resume',
     description: 'Sophisticated design for experienced professionals',
     features: ['Two-page option', 'Skills section', 'Project highlights'],
-    preview: '/templates/executive-pro.png',
+    preview: '/templates/Executive Pro/executive-pro.jpg',
     downloads: 986,
     rating: 4.9,
     format: ['PDF', 'Word'],
     files: {
-      PDF: '/templates/executive-pro.pdf',
-      Word: '/templates/executive-pro.docx'
+      PDF: '/templates/Executive Pro/executive-pro.pdf',
+      Word: '/templates/Executive Pro/executive-pro.docx'
     }
   },
   {
@@ -40,13 +40,13 @@ const templates = [
     category: 'Resume',
     description: 'Perfect for creative professionals and designers',
     features: ['Portfolio section', 'Color options', 'Visual elements'],
-    preview: '/templates/creative-portfolio.png',
+    preview: '/templates/Creative Portfolio/creative-portfolio.jpg',
     downloads: 756,
     rating: 4.7,
     format: ['PDF', 'Word'],
     files: {
-      PDF: '/templates/creative-portfolio.pdf',
-      Word: '/templates/creative-portfolio.docx'
+      PDF: '/templates/Creative Portfolio/creative-portfolio.pdf',
+      Word: '/templates/Creative Portfolio/creative-portfolio.docx'
     }
   },
   {
@@ -55,13 +55,13 @@ const templates = [
     category: 'Cover Letter',
     description: 'Professional and straightforward cover letter template',
     features: ['Three paragraphs', 'Formal tone', 'Easy to customize'],
-    preview: '/templates/standard-cover.png',
+    preview: '/templates/Standard Cover/standard-cover.jpg',
     downloads: 892,
     rating: 4.6,
     format: ['PDF', 'Word'],
     files: {
-      PDF: '/templates/standard-cover.pdf',
-      Word: '/templates/standard-cover.docx'
+      PDF: '/templates/Standard Cover/standard-cover.pdf',
+      Word: '/templates/Standard Cover/standard-cover.docx'
     }
   },
   {
@@ -70,13 +70,13 @@ const templates = [
     category: 'Cover Letter',
     description: 'Stand out with this unique cover letter design',
     features: ['Modern layout', 'Visual elements', 'Customizable sections'],
-    preview: '/templates/creative-cover.png',
+    preview: '/templates/Creative Cover/creative-cover.jpg',
     downloads: 678,
     rating: 4.5,
     format: ['PDF', 'Word'],
     files: {
-      PDF: '/templates/creative-cover.pdf',
-      Word: '/templates/creative-cover.docx'
+      PDF: '/templates/Creative Cover/creative-cover.pdf',
+      Word: '/templates/Creative Cover/creative-cover.docx'
     }
   },
   {
@@ -85,13 +85,13 @@ const templates = [
     category: 'Cover Letter',
     description: 'Specialized template for technical positions',
     features: ['Project highlights', 'Technical skills section', 'Code snippets'],
-    preview: '/templates/technical-cover.png',
+    preview: '/templates/Technical Cover/technical-cover.jpg',
     downloads: 543,
     rating: 4.7,
     format: ['PDF', 'Word'],
     files: {
-      PDF: '/templates/technical-cover.pdf',
-      Word: '/templates/technical-cover.docx'
+      PDF: '/templates/Technical Cover/technical-cover.pdf',
+      Word: '/templates/Technical Cover/technical-cover.docx'
     }
   }
 ];
@@ -101,6 +101,18 @@ const ResumeTemplates = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [previewTemplate, setPreviewTemplate] = useState(null);
   const navigate = useNavigate();
+
+  const handleViewExamples = () => {
+    window.open('https://create.microsoft.com/en-us/search?query=Cover%20Letter%20Examples', '_blank');
+  };
+
+  const handleLearnMore = () => {
+    window.open('https://create.microsoft.com/en-us/learn/articles/how-to-write-ats-friendly-resume', '_blank');
+  };
+
+  const handleReadGuide = () => {
+    window.open('https://create.microsoft.com/en-us/learn/articles/formatting-an-eye-catching-resume', '_blank');
+  };
 
   const categories = ['All', 'Resume', 'Cover Letter'];
 
@@ -335,21 +347,30 @@ const ResumeTemplates = () => {
             <div className="bg-[#1a3f36] p-6 rounded-lg">
               <h3 className="text-xl font-semibold text-[#00ffa3] mb-3">Resume Writing Guide</h3>
               <p className="text-gray-300 mb-4">Learn how to write an effective resume that stands out to employers.</p>
-              <button className="text-[#00ffa3] hover:text-[#00cc82] transition-colors">
+              <button 
+                onClick={handleReadGuide}
+                className="text-[#00ffa3] hover:text-[#00cc82] transition-colors"
+              >
                 Read Guide →
               </button>
             </div>
             <div className="bg-[#1a3f36] p-6 rounded-lg">
               <h3 className="text-xl font-semibold text-[#00ffa3] mb-3">ATS Optimization Tips</h3>
               <p className="text-gray-300 mb-4">Make sure your resume gets past Applicant Tracking Systems.</p>
-              <button className="text-[#00ffa3] hover:text-[#00cc82] transition-colors">
+              <button 
+                onClick={handleLearnMore}
+                className="text-[#00ffa3] hover:text-[#00cc82] transition-colors"
+              >
                 Learn More →
               </button>
             </div>
             <div className="bg-[#1a3f36] p-6 rounded-lg">
               <h3 className="text-xl font-semibold text-[#00ffa3] mb-3">Cover Letter Examples</h3>
               <p className="text-gray-300 mb-4">View sample cover letters for different industries and positions.</p>
-              <button className="text-[#00ffa3] hover:text-[#00cc82] transition-colors">
+              <button 
+                onClick={handleViewExamples}
+                className="text-[#00ffa3] hover:text-[#00cc82] transition-colors"
+              >
                 View Examples →
               </button>
             </div>
