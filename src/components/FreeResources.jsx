@@ -28,7 +28,28 @@ const FreeResources = () => {
   });
 
   const handleViewResource = (resourceId) => {
-    navigate(`/free-resources/${resourceId}`);
+    switch (resourceId) {
+      case 'resume-templates':
+        navigate('/free-resources/resume-templates');
+        break;
+      case 'interview-kit':
+        navigate('/free-resources/interview-kit');
+        break;
+      case 'coding-sheets':
+        navigate('/free-resources/coding-sheets');
+        break;
+      case 'free-courses':
+        navigate('/free-resources/free-courses');
+        break;
+      case 'career-roadmaps':
+        navigate('/free-resources/career-roadmaps');
+        break;
+      case 'community':
+        navigate('/free-resources/community');
+        break;
+      default:
+        navigate(`/free-resources/${resourceId}`);
+    }
   };
 
   const renderIcon = (iconName) => {

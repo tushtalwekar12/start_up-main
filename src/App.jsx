@@ -5,6 +5,11 @@ import Footer from './components/layout/Footer';
 import FreeResources from './components/FreeResources'; // Adjust the path based on your project structure
 import ResourceDetail from './components/ResourceDetail';
 import ResumeTemplates from './components/ResumeTemplates';
+import InterviewKit from './components/InterviewKit';
+import CodingSheets from './components/CodingSheets';
+import FreeCourses from './components/FreeCourses';
+import CareerRoadmaps from './components/CareerRoadmaps';
+import CommunityAccess from './components/CommunityAccess';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -31,6 +36,11 @@ function App() {
           <Route path="/free-resources" element={<FreeResources />} />
           <Route path="/free-resources/:resourceId" element={<ResourceDetail />} />
           <Route path="/free-resources/resume-templates" element={<ResumeTemplates />} />
+          <Route path="/free-resources/interview-kit" element={<InterviewKit />} />
+          <Route path="/free-resources/coding-sheets" element={<CodingSheets />} />
+          <Route path="/free-resources/free-courses" element={<FreeCourses />} />
+          <Route path="/free-resources/career-roadmaps" element={<CareerRoadmaps />} />
+          <Route path="/free-resources/community" element={<CommunityAccess />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
