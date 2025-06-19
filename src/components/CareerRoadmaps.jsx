@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaArrowLeft, FaExternalLinkAlt, FaStar, FaClock, FaBook, FaCode, FaChartLine, FaPalette, FaMobile, FaDatabase } from 'react-icons/fa';
+import { FaArrowLeft, FaExternalLinkAlt, FaStar, FaClock, FaBook, FaCode, FaChartLine, FaPalette, FaMobile, FaDatabase, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 const roadmaps = [
@@ -16,18 +16,30 @@ const roadmaps = [
     resources: [
       {
         title: 'Frontend Development',
-        link: 'https://www.freecodecamp.org/learn/front-end-development-libraries/',
-        description: 'Learn HTML, CSS, and JavaScript fundamentals'
+        description: 'Learn HTML, CSS, and JavaScript fundamentals',
+        plan: [
+          { month: 'Month 1', content: 'HTML & CSS: Structure, tags, forms, layouts, Flexbox, Grid, responsive design.' },
+          { month: 'Month 2', content: 'JavaScript: Variables, functions, DOM manipulation, ES6+, events, fetch API.' },
+          { month: 'Month 3', content: 'Advanced JS: Closures, async/await, modules, build a portfolio project.' }
+        ]
       },
       {
-        title: 'React Documentation',
-        link: 'https://react.dev/',
-        description: 'Official React documentation and tutorials'
+        title: 'React Basics',
+        description: 'Official React documentation and tutorials',
+        plan: [
+          { month: 'Month 4', content: 'React: JSX, components, props, state, events, hooks.' },
+          { month: 'Month 5', content: 'React Router, context API, project structure, API integration.' },
+          { month: 'Month 6', content: 'Build a complete React project (e.g., todo app, blog, dashboard).' }
+        ]
       },
       {
-        title: 'Node.js Course',
-        link: 'https://www.udemy.com/course/nodejs-the-complete-guide/',
-        description: 'Master backend development with Node.js'
+        title: 'Node.js & Backend',
+        description: 'Master backend development with Node.js',
+        plan: [
+          { month: 'Month 7', content: 'Node.js basics, npm, modules, Express.js, REST APIs.' },
+          { month: 'Month 8', content: 'Databases: MongoDB/MySQL, CRUD operations, authentication.' },
+          { month: 'Month 9', content: 'Full stack project: Connect frontend and backend, deploy your app.' }
+        ]
       }
     ]
   },
@@ -43,18 +55,30 @@ const roadmaps = [
     resources: [
       {
         title: 'Python for Data Science',
-        link: 'https://www.coursera.org/specializations/python',
-        description: 'Learn Python programming and data analysis'
+        description: 'Learn Python programming and data analysis',
+        plan: [
+          { month: 'Month 1', content: 'Python basics: syntax, variables, data types, control flow, functions.' },
+          { month: 'Month 2', content: 'Pandas & NumPy: Dataframes, arrays, data cleaning, manipulation.' },
+          { month: 'Month 3', content: 'Data visualization: Matplotlib, Seaborn, exploratory data analysis.' }
+        ]
       },
       {
-        title: 'Machine Learning Course',
-        link: 'https://www.coursera.org/learn/machine-learning',
-        description: 'Stanford\'s machine learning course'
+        title: 'Machine Learning Basics',
+        description: 'Stanford\'s machine learning course',
+        plan: [
+          { month: 'Month 4', content: 'Supervised learning: regression, classification, model evaluation.' },
+          { month: 'Month 5', content: 'Unsupervised learning: clustering, dimensionality reduction.' },
+          { month: 'Month 6', content: 'Machine learning projects: end-to-end workflow, deployment basics.' }
+        ]
       },
       {
         title: 'Data Visualization',
-        link: 'https://www.datacamp.com/courses/data-visualization',
-        description: 'Master data visualization techniques'
+        description: 'Master data visualization techniques',
+        plan: [
+          { month: 'Month 7', content: 'Advanced visualization: Plotly, dashboards, storytelling with data.' },
+          { month: 'Month 8', content: 'SQL for data science: queries, joins, aggregations.' },
+          { month: 'Month 9', content: 'Capstone project: Analyze and visualize a real dataset.' }
+        ]
       }
     ]
   },
@@ -69,19 +93,31 @@ const roadmaps = [
     skills: ['Figma', 'User Research', 'Wireframing', 'Prototyping', 'Visual Design'],
     resources: [
       {
-        title: 'Google UX Design',
-        link: 'https://www.coursera.org/specializations/google-ux-design',
-        description: 'Google\'s UX design certification'
+        title: 'Figma & Design Tools',
+        description: 'Learn Figma from basics to advanced',
+        plan: [
+          { month: 'Month 1', content: 'Figma basics: interface, shapes, colors, typography.' },
+          { month: 'Month 2', content: 'Wireframing, prototyping, components, design systems.' },
+          { month: 'Month 3', content: 'Portfolio project: Design a complete app UI.' }
+        ]
       },
       {
-        title: 'Figma Tutorials',
-        link: 'https://www.figma.com/resources/learn-design/',
-        description: 'Learn Figma from basics to advanced'
+        title: 'UX Fundamentals',
+        description: 'Google\'s UX design certification',
+        plan: [
+          { month: 'Month 4', content: 'User research, personas, user flows, journey maps.' },
+          { month: 'Month 5', content: 'Usability testing, accessibility, feedback.' },
+          { month: 'Month 6', content: 'Portfolio project: Conduct and document a user test.' }
+        ]
       },
       {
         title: 'Interaction Design',
-        link: 'https://www.interaction-design.org/courses',
-        description: 'Master interaction design principles'
+        description: 'Master interaction design principles',
+        plan: [
+          { month: 'Month 7', content: 'Principles of interaction design, microinteractions.' },
+          { month: 'Month 8', content: 'Animation, transitions, advanced prototyping.' },
+          { month: 'Month 9', content: 'Capstone: Redesign a real-world interface.' }
+        ]
       }
     ]
   },
@@ -144,12 +180,20 @@ const roadmaps = [
 const CareerRoadmaps = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const [openDropdown, setOpenDropdown] = useState({});
   const navigate = useNavigate();
 
   const categories = ['All', 'Development', 'Data', 'Design', 'Marketing'];
 
   const handleResourceClick = (link) => {
     window.open(link, '_blank');
+  };
+
+  const handleDropdownToggle = (roadmapId, resourceIdx) => {
+    setOpenDropdown((prev) => ({
+      ...prev,
+      [`${roadmapId}-${resourceIdx}`]: !prev[`${roadmapId}-${resourceIdx}`]
+    }));
   };
 
   const filteredRoadmaps = roadmaps.filter(roadmap => {
@@ -249,21 +293,28 @@ const CareerRoadmaps = () => {
                       </div>
                     </div>
 
-                    {/* Resources */}
+                    {/* Resources as Dropdowns */}
                     <div className="space-y-4">
-                      <h4 className="text-lg font-semibold text-[#00ffa3]">Learning Resources</h4>
-                      {roadmap.resources.map((resource, index) => (
-                        <div key={index} className="bg-[#1a3f36] p-4 rounded-lg">
+                      <h4 className="text-lg font-semibold text-[#00ffa3]">Learning Plan</h4>
+                      {roadmap.resources.map((resource, idx) => (
+                        <div key={idx} className="bg-[#1a3f36] p-4 rounded-lg">
                           <div className="flex items-center justify-between mb-2">
                             <h5 className="font-semibold">{resource.title}</h5>
                             <button
-                              onClick={() => handleResourceClick(resource.link)}
+                              onClick={() => handleDropdownToggle(roadmap.id, idx)}
                               className="flex items-center gap-2 px-3 py-1 bg-[#00ffa3] text-[#002e24] rounded hover:bg-[#00cc82] transition-colors"
                             >
-                              <FaExternalLinkAlt /> Visit
+                              {openDropdown[`${roadmap.id}-${idx}`] ? <FaChevronUp /> : <FaChevronDown />} Details
                             </button>
                           </div>
-                          <p className="text-gray-300 text-sm">{resource.description}</p>
+                          <p className="text-gray-300 text-sm mb-2">{resource.description}</p>
+                          {openDropdown[`${roadmap.id}-${idx}`] && (
+                            <ul className="list-disc list-inside text-gray-200 space-y-1 pl-2">
+                              {resource.plan.map((item, i) => (
+                                <li key={i}><span className="font-semibold text-[#00ffa3]">{item.month}:</span> {item.content}</li>
+                              ))}
+                            </ul>
+                          )}
                         </div>
                       ))}
                     </div>

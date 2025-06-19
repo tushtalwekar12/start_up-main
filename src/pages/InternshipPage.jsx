@@ -31,93 +31,93 @@ const InternshipPage = () => {
 
   const internshipDomains = [
     {
-      title: 'Software Development',
-      description: 'Build and maintain web applications, mobile apps, and software solutions.',
+      title: 'Frontend Development (Unpaid)',
+      description: '1, 3, or 6 month internship focused on building modern, responsive user interfaces using HTML, CSS, and JavaScript frameworks. No stipend (unpaid).',
       icon: FaCode,
       category: 'development',
-      tags: ['Web Development', 'Mobile Development', 'Backend', 'Frontend'],
-      duration: '3-6 months',
-      stipend: '₹5,000 - ₹15,000/month',
+      tags: ['React', 'HTML', 'CSS', 'JavaScript', 'UI'],
+      duration: '1 / 3 / 6 months',
+      stipend: 'Unpaid',
       requirements: [
-        'Basic programming knowledge',
-        'Understanding of web technologies',
+        'Basic HTML, CSS, JavaScript',
+        'Eagerness to learn frontend frameworks',
         'Problem-solving skills',
-        'Git version control'
+        'Portfolio (if available)'
       ]
     },
     {
-      title: 'UI/UX Design',
-      description: 'Create beautiful and intuitive user interfaces and experiences.',
-      icon: FaPalette,
-      category: 'design',
-      tags: ['UI Design', 'UX Design', 'Figma', 'Adobe XD'],
-      duration: '3-6 months',
-      stipend: '₹5,000 - ₹15,000/month',
-      requirements: [
-        'Design tools proficiency',
-        'Understanding of design principles',
-        'Portfolio of work',
-        'Creativity and attention to detail'
-      ]
-    },
-    {
-      title: 'Digital Marketing',
-      description: 'Learn and implement digital marketing strategies and campaigns.',
-      icon: FaChartLine,
-      category: 'marketing',
-      tags: ['Social Media', 'SEO', 'Content Marketing', 'Analytics'],
-      duration: '3-6 months',
-      stipend: '₹5,000 - ₹15,000/month',
-      requirements: [
-        'Basic marketing knowledge',
-        'Social media familiarity',
-        'Content creation skills',
-        'Analytical thinking'
-      ]
-    },
-    {
-      title: 'Web Development',
-      description: 'Develop responsive and modern web applications.',
+      title: 'Backend Development (Unpaid)',
+      description: '1, 3, or 6 month internship focused on server-side logic, databases, and APIs. No stipend (unpaid).',
       icon: FaLaptopCode,
       category: 'development',
-      tags: ['React', 'Node.js', 'MongoDB', 'Express'],
-      duration: '3-6 months',
-      stipend: '₹5,000 - ₹15,000/month',
+      tags: ['Node.js', 'Express', 'APIs', 'Databases'],
+      duration: '1 / 3 / 6 months',
+      stipend: 'Unpaid',
       requirements: [
-        'HTML, CSS, JavaScript',
-        'React.js basics',
-        'Node.js understanding',
-        'Database knowledge'
+        'Basic programming knowledge',
+        'Understanding of server-side concepts',
+        'Database basics',
+        'Problem-solving skills'
       ]
     },
     {
-      title: 'Data Science',
-      description: 'Work with data analysis, machine learning, and AI projects.',
+      title: 'Full Stack Development (Unpaid)',
+      description: '1, 3, or 6 month internship covering both frontend and backend development. No stipend (unpaid).',
+      icon: FaCode,
+      category: 'development',
+      tags: ['Full Stack', 'React', 'Node.js', 'MongoDB'],
+      duration: '1 / 3 / 6 months',
+      stipend: 'Unpaid',
+      requirements: [
+        'Basic web development knowledge',
+        'Interest in both frontend and backend',
+        'Willingness to learn new technologies',
+        'Portfolio (if available)'
+      ]
+    },
+    {
+      title: 'Python Internship (Unpaid)',
+      description: '1, 3, or 6 month internship focused on Python programming and real-world projects. No stipend (unpaid).',
+      icon: FaCode,
+      category: 'development',
+      tags: ['Python', 'Programming', 'Projects'],
+      duration: '1 / 3 / 6 months',
+      stipend: 'Unpaid',
+      requirements: [
+        'Basic Python knowledge',
+        'Eagerness to learn',
+        'Problem-solving skills',
+        'Portfolio (if available)'
+      ]
+    },
+    {
+      title: 'Data Analytics (Unpaid)',
+      description: '1, 3, or 6 month internship focused on data analysis, visualization, and reporting. No stipend (unpaid).',
+      icon: FaChartLine,
+      category: 'data',
+      tags: ['Data Analytics', 'Excel', 'Visualization', 'Reporting'],
+      duration: '1 / 3 / 6 months',
+      stipend: 'Unpaid',
+      requirements: [
+        'Basic Excel or Google Sheets',
+        'Interest in data analysis',
+        'Analytical mindset',
+        'Portfolio (if available)'
+      ]
+    },
+    {
+      title: 'Data Science (Unpaid)',
+      description: '1, 3, or 6 month internship focused on data science, machine learning, and Python. No stipend (unpaid).',
       icon: FaDatabase,
       category: 'data',
-      tags: ['Python', 'Machine Learning', 'Data Analysis', 'SQL'],
-      duration: '3-6 months',
-      stipend: '₹5,000 - ₹15,000/month',
+      tags: ['Data Science', 'Python', 'ML', 'AI'],
+      duration: '1 / 3 / 6 months',
+      stipend: 'Unpaid',
       requirements: [
-        'Python programming',
-        'Basic statistics',
-        'Data analysis skills',
-        'Machine learning concepts'
-      ]
-    },
-    {
-      title: 'AI/ML Development',
-      description: 'Develop and implement AI and machine learning solutions.',
-      icon: FaRobot,
-      category: 'data',
-      tags: ['TensorFlow', 'PyTorch', 'NLP', 'Computer Vision'],
-      duration: '3-6 months',
-      stipend: '₹5,000 - ₹15,000/month',
-      requirements: [
-        'Python programming',
-        'ML algorithms knowledge',
-        'Deep learning basics',
-        'Mathematics background'
+        'Basic Python knowledge',
+        'Interest in data science',
+        'Eagerness to learn ML concepts',
+        'Portfolio (if available)'
       ]
     }
   ];

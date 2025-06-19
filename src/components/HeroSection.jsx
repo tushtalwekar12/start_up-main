@@ -48,7 +48,7 @@ const HeroSection = () => {
           {/* Card 1: Growth */}
           <div className="bg-[#0e2f26] rounded-xl p-5">
             <p className="text-xl font-bold">+95% User Growth</p>
-            <p className="text-sm text-gray-400">Last 30 days on CareerNest</p>
+            <p className="text-sm text-gray-400">Last 30 days on TeachAdvise</p>
             <div className="w-full bg-gray-700 h-2 mt-2 rounded-full overflow-hidden">
               <div className="bg-[#00ffa3] h-full w-[95%]"></div>
             </div>
@@ -96,10 +96,9 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Card 4: Student Career Tracker */}
-          {/* Card: CareerNest Highlights */}
+          {/* Card 4: TeachAdvise Highlights */}
           <div className="bg-[#0e2f26] rounded-xl p-5">
-            <p className="font-semibold mb-4">CareerNest Highlights</p>
+            <p className="font-semibold mb-4">TeachAdvise Highlights</p>
             <ul className="text-sm text-gray-300 space-y-1">
               <li>✅ 100+ Hiring Partners</li>
               <li>🎓 Certified Virtual Internships</li>

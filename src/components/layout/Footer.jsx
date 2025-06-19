@@ -7,9 +7,12 @@ const Footer = () => {
 
         {/* Company Info */}
         <div>
-          <h3 className="text-2xl font-bold mb-4 text-[#00ffa3]">CareerNest</h3>
+          <div className="flex items-center text-2xl font-bold mb-4">
+            <span className="text-[#00ffa3]">Teach</span>
+            <span className="text-white">Advise</span>
+          </div>
           <p className="text-sm text-gray-400">
-            Launch your future with CareerNest – your go-to platform for internships, jobs, online courses, placement prep, and freelance work.
+            Launch your future with TeachAdvise – your go-to platform for internships, jobs, online courses, placement prep, and freelance work.
           </p>
         </div>
 

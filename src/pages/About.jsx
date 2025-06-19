@@ -58,8 +58,8 @@ const About = () => {
         <div className="w-full md:w-1/2 space-y-4">
           <h2 className="text-3xl font-bold text-[#00ffa3]">Who We Are</h2>
           <p className="text-gray-200 text-sm leading-relaxed">
-            At CareerNest, we believe every learner deserves a launching pad for
-            success. We’re a dynamic platform designed to empower students and
+            At TeachAdvise, we believe every learner deserves a launching pad for
+            success. We're a dynamic platform designed to empower students and
             young professionals with virtual internships, job opportunities,
             industry-ready courses, and career preparation tools—all under one
             digital roof.
@@ -67,10 +67,10 @@ const About = () => {
             <br />
             Whether you're looking to gain real-world experience, upskill
             through expert-led classes, build your freelance portfolio, or crack
-            your dream placement, CareerNest is your trusted partner on this
+            your dream placement, TeachAdvise is your trusted partner on this
             journey.
             <br />
-             We’re not just a platform—we’re a career-building
+             We're not just a platform—we're a career-building
             community.
           </p>
 
@@ -88,7 +88,7 @@ const About = () => {
             aria-label="Request a quote"
             className="px-6 py-3 mt-4 text-white bg-[#00ff91] rounded-lg hover:bg-transparent hover:border hover:border-[#00ff91] transition-all duration-300"
           >
-           Join the CareerNest Community
+           Join the TeachAdvise Community
           </button>
         </div>
 

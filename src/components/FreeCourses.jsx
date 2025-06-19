@@ -5,103 +5,37 @@ import { useNavigate } from 'react-router-dom';
 
 const courses = [
   {
-    id: 'web-dev-bootcamp',
-    title: 'The Complete Web Development Bootcamp',
-    platform: 'Udemy',
-    category: 'Web Development',
-    description: 'Learn HTML, CSS, JavaScript, Node.js, and more to become a full-stack developer',
-    features: ['65+ Hours', 'Projects', 'Certificate'],
-    rating: 4.8,
-    students: 1250000,
-    link: 'https://www.udemy.com/course/the-complete-web-development-bootcamp/'
-  },
-  {
-    id: 'cs50',
-    title: 'CS50: Introduction to Computer Science',
-    platform: 'Harvard',
-    category: 'Computer Science',
-    description: 'Harvard\'s introduction to computer science and programming',
-    features: ['12 Weeks', 'Problem Sets', 'Certificate'],
-    rating: 4.9,
-    students: 2500000,
-    link: 'https://cs50.harvard.edu/'
-  },
-  {
-    id: 'machine-learning',
-    title: 'Machine Learning Specialization',
-    platform: 'Coursera',
-    category: 'Data Science',
-    description: 'Master machine learning algorithms and applications',
-    features: ['3 Months', 'Projects', 'Certificate'],
-    rating: 4.8,
-    students: 980000,
-    link: 'https://www.coursera.org/specializations/machine-learning-introduction'
-  },
-  {
-    id: 'data-science',
-    title: 'Data Science Professional Certificate',
-    platform: 'IBM',
-    category: 'Data Science',
-    description: 'Learn data science tools and methodologies',
-    features: ['9 Courses', 'Hands-on Labs', 'Certificate'],
-    rating: 4.7,
-    students: 750000,
-    link: 'https://www.coursera.org/professional-certificates/ibm-data-science'
-  },
-  {
-    id: 'ui-ux-design',
-    title: 'UI/UX Design Specialization',
-    platform: 'Google',
-    category: 'Design',
-    description: 'Master the fundamentals of UI/UX design',
-    features: ['7 Courses', 'Portfolio', 'Certificate'],
-    rating: 4.8,
-    students: 450000,
-    link: 'https://www.coursera.org/specializations/google-ux-design'
-  },
-  {
-    id: 'digital-marketing',
-    title: 'Digital Marketing Specialization',
-    platform: 'University of Illinois',
-    category: 'Marketing',
-    description: 'Comprehensive digital marketing course covering SEO, social media, and analytics',
-    features: ['6 Courses', 'Projects', 'Certificate'],
-    rating: 4.7,
-    students: 320000,
-    link: 'https://www.coursera.org/specializations/digital-marketing'
-  },
-  {
-    id: 'python-for-everybody',
-    title: 'Python for Everybody',
-    platform: 'University of Michigan',
+    id: 'java-bootcamp',
+    title: 'Java Programming Bootcamp',
+    platform: 'TeachAdvise',
     category: 'Programming',
-    description: 'Learn Python programming from basics to advanced concepts',
-    features: ['5 Courses', 'Projects', 'Certificate'],
-    rating: 4.8,
-    students: 1500000,
-    link: 'https://www.coursera.org/specializations/python'
+    description: 'A short, focused bootcamp covering Java fundamentals, OOP, and hands-on mini-projects. Taught by TeachAdvise instructors.',
+    features: ['Beginner Friendly', 'Mini Projects', 'Certificate of Completion'],
+    rating: 5.0,
+    students: 0,
+    link: '#'
   },
   {
-    id: 'android-dev',
-    title: 'Android App Development',
-    platform: 'Google',
-    category: 'Mobile Development',
-    description: 'Build Android apps using Kotlin and Android Studio',
-    features: ['4 Courses', 'Projects', 'Certificate'],
-    rating: 4.7,
-    students: 280000,
-    link: 'https://www.coursera.org/specializations/android-app-development'
+    id: 'python-bootcamp',
+    title: 'Python Programming Bootcamp',
+    platform: 'TeachAdvise',
+    category: 'Programming',
+    description: 'A concise bootcamp to get you started with Python programming, data types, control flow, and real-world exercises. Taught by TeachAdvise instructors.',
+    features: ['Beginner Friendly', 'Hands-on Coding', 'Certificate of Completion'],
+    rating: 5.0,
+    students: 0,
+    link: '#'
   },
   {
-    id: 'blockchain',
-    title: 'Blockchain Specialization',
-    platform: 'University of Buffalo',
-    category: 'Blockchain',
-    description: 'Learn blockchain technology and cryptocurrency fundamentals',
-    features: ['4 Courses', 'Projects', 'Certificate'],
-    rating: 4.6,
-    students: 180000,
-    link: 'https://www.coursera.org/specializations/blockchain'
+    id: 'js-frontend-bootcamp',
+    title: 'JavaScript Frontend Development Bootcamp',
+    platform: 'TeachAdvise',
+    category: 'Web Development',
+    description: 'A practical bootcamp for learning JavaScript and building interactive web interfaces. Includes DOM, events, and mini-projects.',
+    features: ['Frontend Focused', 'Project Based', 'Certificate of Completion'],
+    rating: 5.0,
+    students: 0,
+    link: '#'
   }
 ];
 

@@ -8,8 +8,8 @@ const testimonials = [
     name: "Aditya Sharma",
     title: "Student, B.Tech Final Year",
     rating: "5.0",
-    highlight: "CareerNest helped me land my dream internship with real-world skills.",
-    feedback: "From the first virtual class to resume-building sessions, everything felt personalized and impactful. Their placement preparation track and mock interviews gave me the edge I needed. I’m now interning with a top MNC!"
+    highlight: "TeachAdvise helped me land my dream internship with real-world skills.",
+    feedback: "From the first virtual class to resume-building sessions, everything felt personalized and impactful. Their placement preparation track and mock interviews gave me the edge I needed. I'm now interning with a top MNC!"
   },
   {
     image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=240&q=80",
@@ -17,7 +17,7 @@ const testimonials = [
     title: "Recent Graduate, CS Engineering",
     rating: "5.0",
     highlight: "Their career guidance was a turning point for me.",
-    feedback: "CareerNest’s freelancing gigs and community support helped me earn while learning. I was confused after graduation, but their structured roadmap helped me build confidence and get hired as a junior developer."
+    feedback: "TeachAdvise's freelancing gigs and community support helped me earn while learning. I was confused after graduation, but their structured roadmap helped me build confidence and get hired as a junior developer."
   },
   {
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=240&q=80",
@@ -25,7 +25,7 @@ const testimonials = [
     title: "Job Seeker, Career Transition",
     rating: "5.0",
     highlight: "The platform made my career switch smooth and successful.",
-    feedback: "Switching from teaching to tech was tough until I joined CareerNest. The hands-on projects, mentorship, and upskilling sessions were exactly what I needed. I now work as a frontend developer!"
+    feedback: "Switching from teaching to tech was tough until I joined TeachAdvise. The hands-on projects, mentorship, and upskilling sessions were exactly what I needed. I now work as a frontend developer!"
   }
 ];
 
@@ -55,7 +55,7 @@ const TestimonialSection = () => {
             <span className="text-[#00ffa3]">CLIENTS SAYS</span>
           </h2>
           <p className="text-gray-300 max-w-xl">
-            Hear directly from our community of students, professionals, and partners. Discover how CareerNest has transformed their career journeys through real opportunities, mentorship, and meaningful connections.
+            Hear directly from our community of students, professionals, and partners. Discover how TeachAdvise has transformed their career journeys through real opportunities, mentorship, and meaningful connections.
           </p>
 
           {/* Stars */}

@@ -17,7 +17,7 @@ const communityFeatures = [
       'Job opportunities and updates',
       '24/7 community support'
     ],
-    link: 'https://discord.gg/careernest',
+    link: 'https://discord.gg/teachadvise',
     members: 15000
   },
   {
@@ -33,7 +33,7 @@ const communityFeatures = [
       'Daily tech news',
       'Community announcements'
     ],
-    link: 'https://t.me/careernest',
+    link: 'https://t.me/TeachAdviseCommunity',
     members: 8000
   },
   {
@@ -49,7 +49,7 @@ const communityFeatures = [
       'Job referrals group',
       'Study group coordination'
     ],
-    link: 'https://wa.me/careernest',
+    link: 'https://chat.whatsapp.com/DEtiUS6du610BQ6UP4WoaW',
     members: 5000
   },
   {
@@ -65,7 +65,7 @@ const communityFeatures = [
       'Industry insights',
       'Live sessions with experts'
     ],
-    link: 'https://instagram.com/careernest',
+    link: 'https://instagram.com/teachadvise',
     members: 25000
   }
 ];

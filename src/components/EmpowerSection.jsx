@@ -35,7 +35,7 @@ const EmpowerSection = () => {
             </span>
           </h2>
           <p className="text-gray-300 mb-10 text-lg">
-            CareerNest fosters a collaborative ecosystem where students,
+            TeachAdvise fosters a collaborative ecosystem where students,
             professionals, and educators thrive together. By connecting talent
             with opportunity, we enable meaningful internships, job placements,
             and mentorship that drive real career impact and growth.

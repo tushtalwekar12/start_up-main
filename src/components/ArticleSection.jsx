@@ -11,7 +11,7 @@ const articles = [
   {
     image: 'https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20%281%20of%201%29-5.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     category: 'CAREER DEVELOPMENT',
-    title: 'Mastering Virtual Internships: A CareerNest Guide',
+    title: 'Mastering Virtual Internships: A TeachAdvise Guide',
     description: 'Learn how to stand out in virtual internships, build real-world experience, and grow your professional network from anywhere.',
   },
   {
@@ -67,7 +67,7 @@ const ArticleSection = () => {
 
         {/* Footer with CTA */}
         <div className="text-center mt-12">
-          <p className="text-gray-300 mb-4">Didn’t find what you were looking for?</p>
+          <p className="text-gray-300 mb-4">Didn't find what you were looking for?</p>
           <button className="bg-[#00ffa3] text-black font-semibold px-6 py-2 rounded-full hover:bg-[#00d48c] transition">
             Discover More
           </button>
